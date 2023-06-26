@@ -2,6 +2,14 @@
 GENERAL
 */
 
+img{
+    width: 200px;
+    height: 200px;
+}
 
+.my-container{
+    max-width: 900px;
+    margin: 0 auto;
+}
 
 
