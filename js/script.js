@@ -24,6 +24,11 @@ const teamMembers = [
         image : '../img/angela-lopez-social-media-manager.jpg'
     },
     {
+        name : 'Scott Estrada',
+        role : 'Developer',
+        image : 'img/scott-estrada-developer.jpg'
+    },
+    {
         name : 'Barbara Ramos',
         role : 'Graphic Designer',
         image : '../img/barbara-ramos-graphic-designer.jpg'
@@ -33,9 +38,15 @@ const teamMembers = [
 for (let i = 0; i < teamMembers.length; i++) {
     const member = teamMembers[i];
     console.log('member', member, typeof member);
+    const card = document.createElement('div');
+    card.classList.add('col-4', 'mb-3');
+    const cardContainer = document.getElementById('card-container');
+    
+    cardContainer.append(card);
     
     for (const key in member) {
         console.log(key, member[key]);
+        card.append(member[key]);
     }
 
     console.log('--------------------------------');
